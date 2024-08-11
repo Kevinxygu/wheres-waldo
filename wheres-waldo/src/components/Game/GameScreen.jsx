@@ -2,9 +2,11 @@ import { useState } from 'react'
 import './GameScreen.css'
 import Map from './Map/Map'
 import { useEffect } from 'react'
+import { getRandomImage } from '../../services/getMap'
 
 function GameScreen({changePage, difficulty, time, goal}) {
   const [counter, setCounter] = useState(time);
+  const [randomImage, setRandomImage] = useState(getRandomImage(difficulty));
   
   const returnToHome = () => {
     changePage("home");
@@ -18,14 +20,22 @@ function GameScreen({changePage, difficulty, time, goal}) {
     return () => clearInterval(timer);
   }, [counter]);
 
+  useEffect(() => {
+    const image = getRandomImage(difficulty);
+    setRandomImage(image);
+    console.log(randomImage);
+  }, [difficulty]);
+
   return (
     <div className="game">
       <div className="counter-div">
         <p className="counter">{counter}</p>
+        <p className="goal">Goal: {goal}</p>
+        <p className="difficulty">Difficulty: {difficulty}</p>
       </div>
         <a onClick={returnToHome}><p className="back">Back</p></a>
       <div class="map-container">
-        <Map />
+        <Map imageName={randomImage.filename}/>
       </div>
     </div>
   )

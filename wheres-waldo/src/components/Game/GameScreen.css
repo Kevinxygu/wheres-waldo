@@ -5,8 +5,8 @@
 }
 
 .map-container {
-    background-color: #2D2D2D;
-    max-width: 850px;
+    background-color: #2b2b2b;
+    max-width: 900px;
     margin: auto;
     align-items: center;
 }
@@ -14,16 +14,13 @@
 .menu {
     position: fixed;
     background-color: #2b2b2b;
+    color: #ffffff;
     width: 800px;
     height: 100px;
     z-index: 5;
     top: 2%;
     float: left;
     display: flex
-}
-
-.back {
-    
 }
 
 .menu-text {
