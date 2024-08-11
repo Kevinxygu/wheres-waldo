@@ -1,18 +1,31 @@
-import { useState } from 'react'
-import './GameScreen.css'
-import Map from './Map/Map'
-import { useEffect } from 'react'
-import { getRandomImage } from '../../services/getMap'
+import { useState, useEffect } from 'react';
+import './GameScreen.css';
+import Map from './Map/Map';
+import { getRandomImage } from '../../services/getMap';
 
-function GameScreen({changePage, difficulty, time, goal}) {
+function GameScreen({ changePage, difficulty, time, goal }) {
   const [counter, setCounter] = useState(time);
   const [imageJSON, setImageJSON] = useState(getRandomImage(difficulty));
-  
+
+  // found?
+  const [hasWon, setHasWon] = useState(false);
+
   const returnToHome = () => {
     changePage("home");
   };
 
-  const timeUp = counter <= 0
+  const handleFound = () => {
+    setHasWon(true);
+  }
+
+  const handleRefresh = () => {
+    setCounter(time);
+    const newImage = getRandomImage(difficulty);
+    setImageJSON(newImage);
+    setHasWon(false);
+  };
+
+  const timeUp = counter <= 0;
 
   useEffect(() => {
     const timer =
@@ -30,13 +43,15 @@ function GameScreen({changePage, difficulty, time, goal}) {
     <div className="game">
       <div className="counter-div">
         <p className="counter">{counter}</p>
+        <a onClick={handleRefresh}><i className="fa fa-refresh refreshButton" aria-hidden="true"></i></a>
+        <a onClick={returnToHome}><i className="fa fa-home homeButton" aria-hidden="true"></i></a>
+
       </div>
-        <a onClick={returnToHome}><p className="back" id="back-game">Back</p></a>
-      <div class="map-container">
-        <Map imageJSON={imageJSON} goal={goal} />
+      <div className="map-container">
+        <Map imageJSON={imageJSON} goal={goal} handleFound={handleFound} hasWon={hasWon}/>
       </div>
     </div>
-  )
+  );
 }
 
-export default GameScreen
+export default GameScreen;

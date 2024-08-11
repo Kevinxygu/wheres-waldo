@@ -47,9 +47,9 @@ function Settings({changePage, difficulty, changeDifficulty, time, changeTime, g
 
   return (
     <div className="settingsScreen">
-        <div className="difficulty">
-            <a onClick={returnToHome}><p className="back">Back</p></a>
+        <a onClick={returnToHome}><p className="back">Back</p></a>
 
+        <div className="difficulty">
             <h1 className="header">Difficulty:</h1>
             <button onClick={handleChooseEasy} className={`option ${difficulty === "easy" ? "special-style" : ""}`}>
             EASY
@@ -71,7 +71,7 @@ function Settings({changePage, difficulty, changeDifficulty, time, changeTime, g
             </button>
         </div>
         <div className="time">
-          <h1 className="header">Time (seconds):</h1>
+          <h1 className="header">Time in seconds (Just for fun!):</h1>
           {/* <input type="number" className="timeInput" value={time} onChange={handleNewTime} /> */}
           <input type="number" className="timeInput" min={0} max={999}value={time == "0" ? NaN : (time)} onChange={handleNewTime} />
         </div>

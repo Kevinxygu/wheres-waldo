@@ -2,13 +2,14 @@ import { useEffect, useState } from 'react'
 import './Map.css'
 import Magnifier from "react-magnifier"
 
-function Map( {imageJSON, goal} ) {
+function Map( {imageJSON, goal, handleFound, hasWon} ) {
     const [mouseX, setMouseX] = useState(0);
     const [mouseY, setMouseY] = useState(0);
 
     // get correct x and y coordinates from imageJSON based on goal
     const [correctX, setCorrectX] = useState(0);
     const [correctY, setCorrectY] = useState(0);
+  
 
     useEffect(() => {
         if (goal == "waldo") {
@@ -21,6 +22,16 @@ function Map( {imageJSON, goal} ) {
           throw new Error("The goal is invalid. Please refresh the game.")
         }
     }, [goal, imageJSON]);
+
+    // check if they found or not!
+    const handleMouseClick = () => {
+      if (
+        Math.abs(mouseX - correctX) <= 15 &&
+        Math.abs(mouseY - correctY) <= 15
+      ) {
+        handleFound();
+      }
+    };
 
 
     const handleMouseMove = (e) => {
@@ -38,12 +49,28 @@ function Map( {imageJSON, goal} ) {
     };
 
     return (
-      <div className="container" onMouseMove={handleMouseMove}>
-        <Magnifier src={`/waldo-images/${imageJSON.filename}`} zoomFactor={1.2} mgWidth={125} mgHeight={125}/>
-        <div>X: {mouseX}</div>
-        <div>Y: {mouseY}</div>
+      <div className="container" onMouseMove={handleMouseMove} onClick={handleMouseClick}>
+        {hasWon ? (
+          <div className="victoryScreen">
+            <h1 className="victoryHeader">Found!</h1>
+            <img className="waldoGif" src='/waldo-walk.gif' alt="Waldo Walking" />
+          </div>
+
+        ) : (
+          <>
+            <Magnifier
+              src={`/waldo-images/${imageJSON.filename}`}
+              zoomFactor={1.2}
+              mgWidth={125}
+              mgHeight={125}
+              className='magnifier'
+            />
+            {/* <div>X: {mouseX}</div>
+            <div>Y: {mouseY}</div> */}
+          </>
+        )}
       </div>
-    )
+    );
 }
 
 export default Map;

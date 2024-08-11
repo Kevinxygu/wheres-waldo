@@ -1,33 +1,21 @@
-/* .container {
-    position: relative;
-    overflow: hidden;
-    width: 80%;
-    margin: auto;
-    text-align: center;
-    padding: 50px;
-  }
-  
-  .image {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  /*
-  .magnify-glass {
-    position: absolute;
-    pointer-events: none;
-    width: 30px; /* Set the desired size of the magnifying glass */
-   /* height: 30px; /* Set the desired size of the magnifying glass 
-    border-radius: 50%;
-    border: 2px solid #fff;
-    box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
-    background-image: url("image.jpg"); /* Set the path to your image 
-    background-repeat: no-repeat;
-    background-size: cover;
-    opacity: 0.5;
-    transform: scale(1);
-    z-index: 1;
-    transition: opacity 0.3s, transform 0.3s;
-  } */
-  
+.victoryScreen {
+  background-color: #e7e7e7;
+  text-align: center;
+  height: 100%;
+}
+
+.victoryHeader {
+  margin: 0;
+  padding: 35px;
+  text-align: center;
+  background-color: #e7e7e7;
+  color: #2D2D2D
+}
+
+.waldoGif {
+  padding: 35px;
+}
+
+.magnifier {
+  border: 6px solid #D13939;
+}

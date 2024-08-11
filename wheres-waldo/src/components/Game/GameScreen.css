@@ -9,6 +9,35 @@
 
 #back-game {
     margin-left: 5%;
+    padding-right: 0;
+}
+
+.backButton {
+    width: 0;
+}
+
+.refreshButton {
+    margin-top: 10px;
+    transition: 0.3s ease;
+    cursor: pointer;
+    color: #5b5b5b;
+    margin: 15px 25px;
+}
+
+.refreshButton:hover {
+    color: #D13939;
+}
+
+.homeButton {
+    margin-top: 10px;
+    transition: 0.3s ease;
+    cursor: pointer;
+    color: #5b5b5b;
+    margin: 15px 25px;
+}
+
+.homeButton:hover {
+    color: #D13939;
 }
 
 .map-container {
@@ -16,7 +45,7 @@
     max-width: 900px;
     margin: auto;
     align-items: center;
-    border:#D13939 3px solid;
+    /* border:#D13939 3px solid; */
 }
 
 .menu {
@@ -39,5 +68,5 @@
 
 .counter-div {
     text-align: center;
-    padding-top: 20px;
+    padding-top: 15px;
 }
