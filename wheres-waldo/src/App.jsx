@@ -3,6 +3,7 @@ import './App.css'
 import Home from './components/Home/Home'
 import Settings from './components/Settings/Settings'
 import GameScreen from './components/Game/GameScreen'
+import Terms from './components/Terms/Terms'
 
 function App() {
   // Initial state
@@ -48,8 +49,9 @@ function App() {
      difficulty={difficulty}
       time={time}
       goal={goal} />
+  } else if (currentPage === 'terms') {
+    pageComponent = <Terms changePage={changePage} />;
   }
-
   return (
     <div>
       {pageComponent}

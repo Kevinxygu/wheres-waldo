@@ -13,6 +13,10 @@ function Home( {changePage}) {
     changePage('game');
   };
 
+  const handleChooseTerms = () => {
+    changePage('terms');
+  };
+
   return (
     <>
       <div className="image-container">
@@ -20,6 +24,7 @@ function Home( {changePage}) {
         <div className="overlay">
             <button onClick={handleChooseGame} className="action-button">PLAY</button>
             <a onClick={handleChooseSettings}><p className="settings">Settings</p></a>
+            <a onClick={handleChooseTerms}><p className="terms">Terms</p></a>
         </div>
       </div>
     </>
