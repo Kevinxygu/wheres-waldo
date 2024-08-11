@@ -1,10 +1,26 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import './Map.css'
 import Magnifier from "react-magnifier"
 
-function Map( {imageName} ) {
+function Map( {imageJSON, goal} ) {
     const [mouseX, setMouseX] = useState(0);
     const [mouseY, setMouseY] = useState(0);
+
+    // get correct x and y coordinates from imageJSON based on goal
+    const [correctX, setCorrectX] = useState(0);
+    const [correctY, setCorrectY] = useState(0);
+
+    useEffect(() => {
+        if (goal == "waldo") {
+          setCorrectX(imageJSON.waldoX);
+          setCorrectY(imageJSON.waldoY);
+        } else if (goal == "odlaw") {
+          setCorrectX(imageJSON.odlawX);
+          setCorrectY(imageJSON.odlawY);
+        } else {
+          throw new Error("The goal is invalid. Please refresh the game.")
+        }
+    }, [goal, imageJSON]);
 
 
     const handleMouseMove = (e) => {
@@ -23,7 +39,7 @@ function Map( {imageName} ) {
 
     return (
       <div className="container" onMouseMove={handleMouseMove}>
-        <Magnifier src={`/waldo-images/${imageName}`} zoomFactor={1.2} mgWidth={125} mgHeight={125}/>
+        <Magnifier src={`/waldo-images/${imageJSON.filename}`} zoomFactor={1.2} mgWidth={125} mgHeight={125}/>
         <div>Mouse X: {mouseX}</div>
         <div>Mouse Y: {mouseY}</div>
       </div>

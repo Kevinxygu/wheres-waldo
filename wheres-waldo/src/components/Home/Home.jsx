@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import './Home.css'
-import Banner from "../../assets/images/WALDO-BANNER-6.jpg"
+import Banner from "../../assets/images/WALDO-BANNER-THIN.png"
 
 function Home( {changePage}) {
   const [count, setCount] = useState(0)

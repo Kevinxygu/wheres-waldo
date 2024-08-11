@@ -13,7 +13,9 @@ light grey: #8b8b8b
 
 .banner {
     width: 100%;
-    margin: 0
+    max-height: 100vh;
+    margin-bottom: 150px;
+    object-fit: cover;
 }
 
 .image-container {
@@ -29,7 +31,6 @@ light grey: #8b8b8b
     z-index: 1;
     margin: auto;
     text-align: center;
-    padding-bottom: 50px;
 }
   
 .text-link,

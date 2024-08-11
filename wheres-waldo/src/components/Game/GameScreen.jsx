@@ -6,7 +6,7 @@ import { getRandomImage } from '../../services/getMap'
 
 function GameScreen({changePage, difficulty, time, goal}) {
   const [counter, setCounter] = useState(time);
-  const [randomImage, setRandomImage] = useState(getRandomImage(difficulty));
+  const [imageJSON, setImageJSON] = useState(getRandomImage(difficulty));
   
   const returnToHome = () => {
     changePage("home");
@@ -22,8 +22,8 @@ function GameScreen({changePage, difficulty, time, goal}) {
 
   useEffect(() => {
     const image = getRandomImage(difficulty);
-    setRandomImage(image);
-    console.log(randomImage);
+    setImageJSON(image);
+    console.log(imageJSON);
   }, [difficulty]);
 
   return (
@@ -35,7 +35,7 @@ function GameScreen({changePage, difficulty, time, goal}) {
       </div>
         <a onClick={returnToHome}><p className="back">Back</p></a>
       <div class="map-container">
-        <Map imageName={randomImage.filename}/>
+        <Map imageJSON={imageJSON} goal={goal} />
       </div>
     </div>
   )
