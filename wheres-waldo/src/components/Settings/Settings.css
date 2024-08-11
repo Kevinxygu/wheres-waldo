@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+* {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.back {
+    font-weight: 200;
+    font-size: 20px;
+    color: #5b5b5b;
+    transition: 0.3s ease;
+    text-align: left;
+    margin: 15px 0px
+}
+
+.back:hover {
+    color:#c2c2c2;
+    cursor: pointer;
+}
+
+.header {
+    font-size: 20px;
+}
+
+.settingsScreen {
+    background-color: #2D2D2D;
+    color: #FBFCFD;
+    margin: auto;
+    padding-top: 30px;
+    text-align: left;
+    flex-direction: column;
+    padding-left: 15%;
+}
+
+.difficulty {
+    text-align: left;
+    display: inline-block
+}
+
+.option {
+    padding: 60px 100px;
+    background-color: #2D2D2D;
+    font-weight: 200;
+    border: 3px #FBFCFD solid;
+    margin: 10px;
+    border-radius: 15px;
+    color: #FBFCFD;
+    font-size: 20px;
+    position: relative;
+    transition: 0.3s ease
+}
+
+.option:hover {
+    background-color: #3f3f3f;
+    cursor: pointer;
+}
+
+.option.special-style {
+    color: #D13939;
+    border-color: #D13939;
+}
+
+.option.special-style:hover {
+    background-color: #412b2b;
+    color: #D13939;
+    cursor: pointer;
+}
+
+.special-image {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    max-width: 35px;
+}
+
+.time {
+    margin: 30px 0px;
+}
+
+.timeInput {
+    background-color: #2D2D2D;
+    padding: 10px 0px;
+    outline: 0;
+    border-width: 0 0 2px;
+    border-color: grey;
+    font-size: 20px;
+    color:#FBFCFD;
+    transition: 0.4s ease;
+}
+
+.timeInput:focus {
+    border-color: #D13939;
+}
+
+.goal-button {
+    padding: 30px;
+    background-color: #2D2D2D;
+    font-weight: 200;
+    border: 3px #FBFCFD solid;
+    border-radius: 15px;
+    color: #FBFCFD;
+    font-size: 20px;
+    transition: 0.3s ease;
+    margin: 15px;
+}
+
+.goal-button:hover {
+    background-color: #3f3f3f;
+    cursor: pointer;
+}
+
+.button-content {
+    flex-direction: column;
+}
+
+.gif {
+    max-width: 150px;
+    height: auto;
+}
+
+.waldo {
+    color: #D13939;
+    border-color: #D13939;
+}
+
+.waldo:hover {
+    background-color: #412b2b;
+    color: #D13939;
+    cursor: pointer;
+}
+
+.odlaw {
+    color: #d3c546;
+    border-color: #d3c546;
+}
+
+.odlaw:hover {
+    background-color: #3f3b13;
+    color: #d3c546;
+    cursor: pointer;
+}
+
+

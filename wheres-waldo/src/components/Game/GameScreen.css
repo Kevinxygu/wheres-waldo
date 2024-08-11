@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+* {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.map-container {
+    background-color: #2D2D2D;
+    max-width: 850px;
+    margin: auto;
+    align-items: center;
+}
+
+.menu {
+    position: fixed;
+    background-color: #2b2b2b;
+    width: 800px;
+    height: 100px;
+    z-index: 5;
+    top: 2%;
+    float: left;
+    display: flex
+}
+
+.back {
+    
+}
+
+.menu-text {
+    color: #FBFCFD;
+    font-weight: 500;
+    font-size: 15px;
+}
