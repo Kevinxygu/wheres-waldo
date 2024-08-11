@@ -1,7 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
 
-* {
-    font-family: 'Open Sans', sans-serif;
+.settingsScreen {
+    background-color: #2D2D2D;
+    height: 100vh;
+    width: 100%;
+    color: #FBFCFD;
+    margin: auto;
+    text-align: left;
+    flex-direction: column;
+    padding-left: 15%;
+    padding-top: 5%;
+    overflow: hidden;
+    position: fixed;
 }
 
 .back {
@@ -10,7 +20,7 @@
     color: #5b5b5b;
     transition: 0.3s ease;
     text-align: left;
-    margin: 15px 0px
+    margin: 0;
 }
 
 .back:hover {
@@ -22,23 +32,13 @@
     font-size: 20px;
 }
 
-.settingsScreen {
-    background-color: #2D2D2D;
-    color: #FBFCFD;
-    margin: auto;
-    padding-top: 30px;
-    text-align: left;
-    flex-direction: column;
-    padding-left: 15%;
-}
-
 .difficulty {
     text-align: left;
     display: inline-block
 }
 
 .option {
-    padding: 60px 100px;
+    padding: 30px 50px;
     background-color: #2D2D2D;
     font-weight: 200;
     border: 3px #FBFCFD solid;
@@ -114,7 +114,7 @@
 }
 
 .gif {
-    max-width: 150px;
+    max-width: 80px;
     height: auto;
 }
 

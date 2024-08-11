@@ -30,10 +30,8 @@ function GameScreen({changePage, difficulty, time, goal}) {
     <div className="game">
       <div className="counter-div">
         <p className="counter">{counter}</p>
-        <p className="goal">Goal: {goal}</p>
-        <p className="difficulty">Difficulty: {difficulty}</p>
       </div>
-        <a onClick={returnToHome}><p className="back">Back</p></a>
+        <a onClick={returnToHome}><p className="back" id="back-game">Back</p></a>
       <div class="map-container">
         <Map imageJSON={imageJSON} goal={goal} />
       </div>

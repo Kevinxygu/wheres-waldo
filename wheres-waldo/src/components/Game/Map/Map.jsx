@@ -40,8 +40,8 @@ function Map( {imageJSON, goal} ) {
     return (
       <div className="container" onMouseMove={handleMouseMove}>
         <Magnifier src={`/waldo-images/${imageJSON.filename}`} zoomFactor={1.2} mgWidth={125} mgHeight={125}/>
-        <div>Mouse X: {mouseX}</div>
-        <div>Mouse Y: {mouseY}</div>
+        <div>X: {mouseX}</div>
+        <div>Y: {mouseY}</div>
       </div>
     )
 }
