@@ -1,4 +1,4 @@
-import { waldoAnswers } from './waldoAnswers';
+import { waldoAnswers } from './secrets/waldoAnswers';
 
 export const getRandomImage = (difficulty) => {
     const maps = waldoAnswers.Maps;
