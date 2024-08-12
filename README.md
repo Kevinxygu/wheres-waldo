@@ -9,6 +9,7 @@ I found this project on my computer as a dusty project I hadn't finished, and de
 |:---|:---|
 | Understanding Someone Else's Code | This project was from quite a long time ago, and it took me a while to understand my old code. Having grown as a better developer since then, it was a meaningful learning experience to a.) understand how I would have implemented it today, and b.) implement new features in the "language" of another programmer and catering to their existing design. I learned a lot about how to be adaptable as a dev!|
 | Vite | I was interested in learning more about build tools, and a friend had recommended Vite. I used it for the first time in this project. It's really fast!! |
+| Netlify + Deployment | The project was a nice refresher on good practices when deploying services onto a website, and I achieved this with Netlify. I encountered a few hurdles here, but by adjusting my vite.config.js file and having the right settings, I learned a lot more about deploying apps in a good way!|
 | Where's Waldo?    | I played an ungodly amount of Where's Waldo. |
 | Refactoring | The code is old, and I myself had learned a LOT of new healthy practices for coding since then for code readibility and quality. As I refactor it further, it's a refreshing and interesting learning experience as I go. Refactoring the app helps me understand a.) Why does this need refactoring, b.) What would be a better solution and c.) What else will this affect in my codebase? |
 
