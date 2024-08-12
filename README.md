@@ -15,7 +15,7 @@ I found this project on my computer as a dusty project I hadn't finished, and de
 ## :city_sunrise: Future Features + Considerations
 [Aug 11]: Adding more maps + more characters to find! e.g. Wenda, Wizard Whitebeard and Woof.
 
-[Aug 11: Refactoring the code to be better is ongoing
+[Aug 11]: Refactoring the code to be better is ongoing, INCLUDING making it more reactive. The app currently doesn't work if the map shrinks below 900px
 
 ## 📂 Terms
 This app is not affiliated with or endorsed by the rights holders of "Where's Waldo" or any related entities. All images used are from the public domain and are not being used for commercial purposes. This app does not claim the rights to the original "Where's Waldo" characters, illustrations, or books. All rights to the original work remain with the copyright holders.
