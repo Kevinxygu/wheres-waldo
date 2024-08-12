@@ -9,8 +9,8 @@ export default defineConfig({
     viteStaticCopy({
       targets: [
         {
-          src: 'src/services/secrets',
-          dest: 'secrets'
+          src: 'src/services/secrets/waldoAnswers.js',
+          dest: 'secrets',
         }
       ]
     })
