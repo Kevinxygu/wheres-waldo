@@ -3,7 +3,7 @@ import './GameScreen.css';
 import Map from './Map/Map';
 import { getRandomImage } from '../../services/getMap';
 
-function GameScreen({ changePage, difficulty, time, goal }) {
+const GameScreen = ({ changePage, difficulty, time, goal }) => {
   const [counter, setCounter] = useState(time);
   const [imageJSON, setImageJSON] = useState(getRandomImage(difficulty));
 
