@@ -42,7 +42,7 @@
 
 .map-container {
     background-color: #2b2b2b;
-    max-width: 900px;
+    width: 900px;
     margin: auto;
     align-items: center;
     /* border:#D13939 3px solid; */
