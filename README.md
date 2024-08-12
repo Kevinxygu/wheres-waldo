@@ -1,6 +1,7 @@
-# :eyes: Where's Waldo? Online
+# :eyes: Where's Waldo?
 
-Where's Waldo is an web game replicating the legendary [line of books!](https://en.wikipedia.org/wiki/Where%27s_Wally%3F)
+I developed a web game replicating the legendary [line of books!](https://en.wikipedia.org/wiki/Where%27s_Wally%3F)
+Play it here: [wheres-waldo-game.netlify.app](wheres-waldo-game.netlify.app)
 
 ## :book: Learnings
 
