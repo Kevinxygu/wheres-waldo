@@ -36,7 +36,7 @@ const GameScreen = ({ changePage, difficulty, time, goal }) => {
   useEffect(() => {
     const image = getRandomImage(difficulty);
     setImageJSON(image);
-    console.log(imageJSON);
+    // console.log(imageJSON);
   }, [difficulty]);
 
   return (
