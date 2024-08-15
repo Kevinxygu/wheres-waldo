@@ -20,7 +20,7 @@
     margin-top: 10px;
     transition: 0.3s ease;
     cursor: pointer;
-    color: #5b5b5b;
+    color: #cecece;
     margin: 15px 25px;
 }
 
@@ -32,8 +32,8 @@
     margin-top: 10px;
     transition: 0.3s ease;
     cursor: pointer;
-    color: #5b5b5b;
-    margin: 15px 25px;
+    color: #cecece;
+    margin: 25px;
 }
 
 .homeButton:hover {

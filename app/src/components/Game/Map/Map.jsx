@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import './Map.css'
 import Magnifier from "react-magnifier"
 
-function Map( {imageJSON, goal, handleFound, hasWon} ) {
+function Map( {imageJSON, goal, handleFound, hasWon, handleRefresh} ) {
     const [mouseX, setMouseX] = useState(0);
     const [mouseY, setMouseY] = useState(0);
 
@@ -54,8 +54,8 @@ function Map( {imageJSON, goal, handleFound, hasWon} ) {
           <div className="victoryScreen">
             <h1 className="victoryHeader">Found!</h1>
             <img className="waldoGif" src='/waldo-walk.gif' alt="Waldo Walking" />
+            <button className="refreshButtonMap" onClick={handleRefresh}>Play Again</button>
           </div>
-
         ) : (
           <>
             <Magnifier

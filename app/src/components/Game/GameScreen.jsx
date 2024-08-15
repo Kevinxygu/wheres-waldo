@@ -36,7 +36,6 @@ const GameScreen = ({ changePage, difficulty, time, goal }) => {
   useEffect(() => {
     const image = getRandomImage(difficulty);
     setImageJSON(image);
-    // console.log(imageJSON);
   }, [difficulty]);
 
   return (
@@ -48,7 +47,7 @@ const GameScreen = ({ changePage, difficulty, time, goal }) => {
 
       </div>
       <div className="map-container">
-        <Map imageJSON={imageJSON} goal={goal} handleFound={handleFound} hasWon={hasWon}/>
+        <Map imageJSON={imageJSON} goal={goal} handleFound={handleFound} hasWon={hasWon} handleRefresh={handleRefresh}/>
       </div>
     </div>
   );

@@ -1,7 +1,10 @@
 .victoryScreen {
   background-color: #e7e7e7;
   text-align: center;
+  flex-direction: column;
+  align-items: center;
   height: 100%;
+  display: flex;
 }
 
 .victoryHeader {
@@ -9,13 +12,32 @@
   padding: 35px;
   text-align: center;
   background-color: #e7e7e7;
-  color: #2D2D2D
+  color: #2D2D2D;
 }
 
 .waldoGif {
-  padding: 35px;
+  padding: 35px 0;
 }
 
 .magnifier {
   border: 6px solid #D13939;
+}
+
+.refreshButtonMap {
+  color: #8B8B8B;
+  background-color: #FBFCFD;
+  transition: 0.3s ease;
+  border: #bdbdbd 3px solid;
+  border-radius: 15px;
+  padding: 20px 50px;
+  margin-bottom: 50px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.refreshButtonMap:hover {
+  background-color: #D13939;
+  color: #FBFCFD;
+  border: none;
+  border: #D13939 3px solid;
 }
