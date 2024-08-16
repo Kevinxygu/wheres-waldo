@@ -3,6 +3,7 @@ import './GameScreen.css';
 import Map from './Map/Map';
 import { getRandomImage } from '../../services/getMap';
 
+// The gamescreen, which includes the map component to find waldo / odlaw
 const GameScreen = ({ changePage, difficulty, time, goal }) => {
   const [counter, setCounter] = useState(time);
   const [imageJSON, setImageJSON] = useState(getRandomImage(difficulty));
