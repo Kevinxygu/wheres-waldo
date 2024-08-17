@@ -5,7 +5,8 @@ import Settings from './components/Settings/Settings'
 import GameScreen from './components/Game/GameScreen'
 import Terms from './components/Terms/Terms'
 
-function App() {
+// main app screen (conditially renders home, settings, game, or terms)
+const App = () => {
   // Initial state
   const [currentPage, setCurrentPage] = useState('home');
   const [difficulty, setDifficulty] = useState('easy');
