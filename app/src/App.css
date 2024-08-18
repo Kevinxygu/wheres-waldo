@@ -1,5 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+.smallScreenMessage {
+    width: 100%;
+    text-align: left;
+    background-color: #2b2b2b;
+    color: #FBFCFD;
+    font-size: 12px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    justify-content: center; /* Center children vertically */
+    align-items: center; /* Center children horizontally */
+}
 
-* {
-    font-family: 'Open Sans', sans-serif;
+.tooSmallImage {
+    max-width: 150px;
+}
+
+.smallScreenText {
+    margin: 5% 15%;
 }
