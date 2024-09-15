@@ -5,13 +5,13 @@ Play it here: [wheres-waldo-game.netlify.app](wheres-waldo-game.netlify.app)
 
 ## :book: Learnings
 
-I found this project on my computer as a dusty project I hadn't finished, and decided to spend a weekend finishing it. Here's what I enjoyed about the process:
+I found this project on my computer as a dusty project I hadn't finished, and decided to spend a weekend finishing it. Here's what I enjoyed about the process and got to learn:
 | Concept | Learnings |
 |:---|:---|
 | Understanding Someone Else's Code | This project was from quite a long time ago, and it took me a while to understand my old code. Having grown as a better developer since then, it was a meaningful learning experience to a.) understand how I would have implemented it today, and b.) implement new features in the "language" of another programmer and catering to their existing design. I learned a lot about how to be adaptable as a dev!|
-| [Vite](https://vitejs.dev/) | I was interested in learning more about build tools, and a friend had recommended Vite. I used it for the first time in this project. It's really fast!! |
-| [Netlify + Deployment](https://docs.netlify.com/) | The project was a nice refresher on good practices when deploying a website, and I achieved this with Netlify. I encountered a few hurdles here, but by adjusting my vite.config.js file and having the right settings, I learned a lot more about deploying apps in a good way!|
 | [Where's Waldo?](https://en.wikipedia.org/wiki/Where%27s_Wally%3F) | I played an ungodly amount of Where's Waldo. |
+| [Vite](https://vitejs.dev/) | I was interested in learning more about build tools, and a friend had recommended Vite. I used it for the first time in this project. It's neat!! |
+| [Netlify + Deployment](https://docs.netlify.com/) | The project was a nice refresher on good practices when deploying a website, and I achieved this with Netlify. I encountered a few hurdles here, but by adjusting my vite.config.js file and having the right settings, I learned a lot more about deploying apps in a good way!|
 | Refactoring | The code is old, and I myself had learned a LOT of new healthy practices for coding since then for code readibility and quality. As I refactor it further, it's a refreshing and interesting learning experience as I go. Refactoring the app helps me understand a.) Why does this need refactoring, b.) What would be a better solution and c.) What else will this affect in my codebase? |
 
 ## :city_sunrise: Future Features + Considerations
