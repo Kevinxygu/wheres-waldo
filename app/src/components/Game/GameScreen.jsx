@@ -26,13 +26,13 @@ const GameScreen = ({ changePage, difficulty, time, goal }) => {
     setHasWon(false);
   };
 
-  const timeUp = counter <= 0;
+  // const timeUp = counter <= 0;
 
+  // count down if user has not won yet
   useEffect(() => {
-    const timer =
-      counter > 0 && setInterval(() => setCounter(counter - 1), 1000);
+    const timer = hasWon ? null : setInterval(() => setCounter(counter - 1), 1000);
     return () => clearInterval(timer);
-  }, [counter]);
+  }, [counter, hasWon]);
 
   useEffect(() => {
     const image = getRandomImage(difficulty);
